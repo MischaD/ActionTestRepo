@@ -19,6 +19,8 @@ jobs:
         sudo apt-get install rethinkdb
 
     - name: Start RethinkDB Daemon
+      run: |
+        rethinkdb --daemon
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
