@@ -18,4 +18,7 @@ jobs:
           echo "::set-env name=PATH::$HOME/.poetry/bin:$PATH"
     - name: Install Dependencies
       run: |
-          poetry install --dev
+          poetry install
+    - name: Run Test
+      run: |
+        poetry run pytest
