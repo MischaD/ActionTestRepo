@@ -1,4 +1,4 @@
 
 class TestApp:
-    def test_apis(self, client):
+    def test_apis(self):
         assert True

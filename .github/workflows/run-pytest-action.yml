@@ -1,0 +1,21 @@
+name: Run Pytest
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup.python@v2
+      with:
+        python-version: 3.7
+    - name: Install poetry
+        run:|
+          curl -fsS -o get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
+          python get-poetry.py -y
+          echo "::set-env name=PATH::$HOME/.poetry/bin:$PATH"
+    - name: Install Dependencies
+        run:|
+          poetry install --dev
