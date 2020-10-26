@@ -1,0 +1,32 @@
+2020-10-26T14:14:10.843700898 0.050958s notice: Recursively removing directory /home/mischa/gateway/ActionTestRepo/rethinkdb_data/tmp
+2020-10-26T14:14:10.866631983 0.073895s notice: Initializing directory /home/mischa/gateway/ActionTestRepo/rethinkdb_data
+2020-10-26T14:14:10.866828767 0.074084s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/mischa/gateway/ActionTestRepo/rethinkdb_data' did not already exist or is empty.)
+2020-10-26T14:14:10.866907257 0.074163s notice: Running rethinkdb 2.4.0~0bionic (CLANG 6.0.0 (tags/RELEASE_600/final))...
+2020-10-26T14:14:10.874263315 0.081526s notice: Running on Linux 4.15.0-121-generic x86_64
+2020-10-26T14:14:10.874438280 0.081694s notice: Loading data from directory /home/mischa/gateway/ActionTestRepo/rethinkdb_data
+2020-10-26T14:14:11.108064679 0.315327s info: Automatically using cache size of 3855 MB
+2020-10-26T14:14:11.110273554 0.317529s notice: Listening for intracluster connections on port 29015
+2020-10-26T14:14:11.115055010 0.322311s notice: Listening for client driver connections on port 28015
+2020-10-26T14:14:11.115290282 0.322546s notice: Listening for administrative HTTP connections on port 8080
+2020-10-26T14:14:11.115302826 0.322558s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2020-10-26T14:14:11.115316495 0.322572s notice: Listening on driver addresses: 127.0.0.1, ::1
+2020-10-26T14:14:11.115334930 0.322590s notice: Listening on http addresses: 127.0.0.1, ::1
+2020-10-26T14:14:11.115351029 0.322606s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2020-10-26T14:14:11.115367279 0.322622s notice: Server ready, "mischa_Ubuntu_5bi" 448bfc08-b9fe-46d8-8f5b-865e005105ff
+2020-10-26T14:14:17.246102346 6.453357s info: Table 03584868-9376-4994-8251-aac6bf5395c7: Starting a new Raft election for term 1.
+2020-10-26T14:14:17.246295253 6.453550s info: Table 03584868-9376-4994-8251-aac6bf5395c7: Added replica on this server.
+2020-10-26T14:14:17.290782630 6.498038s info: Table 03584868-9376-4994-8251-aac6bf5395c7: This server is Raft leader for term 1. Latest log index is 0.
+2020-10-26T14:14:18.955485750 8.162741s info: Table 8f7dc49e-1095-4d18-a7b1-b7da548af509: Starting a new Raft election for term 1.
+2020-10-26T14:14:18.956182473 8.163438s info: Table 8f7dc49e-1095-4d18-a7b1-b7da548af509: Added replica on this server.
+2020-10-26T14:14:18.999398511 8.206654s info: Table 8f7dc49e-1095-4d18-a7b1-b7da548af509: This server is Raft leader for term 1. Latest log index is 0.
+2020-10-26T14:14:20.164054242 9.371310s info: Table 354baca3-46fe-43b9-afba-c8dfbcb2f614: Starting a new Raft election for term 1.
+2020-10-26T14:14:20.164688393 9.371945s info: Table 354baca3-46fe-43b9-afba-c8dfbcb2f614: Added replica on this server.
+2020-10-26T14:14:20.207858904 9.415115s info: Table 354baca3-46fe-43b9-afba-c8dfbcb2f614: This server is Raft leader for term 1. Latest log index is 0.
+2020-10-26T14:14:21.414617757 10.621873s info: Table 45b9a671-6a1f-4996-a250-33a34a351bc4: Starting a new Raft election for term 1.
+2020-10-26T14:14:21.415331996 10.622588s info: Table 45b9a671-6a1f-4996-a250-33a34a351bc4: Added replica on this server.
+2020-10-26T14:14:21.458028321 10.665285s info: Table 45b9a671-6a1f-4996-a250-33a34a351bc4: This server is Raft leader for term 1. Latest log index is 0.
+2020-10-26T14:14:43.109675349 32.316932s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2020-10-26T14:14:43.109963666 32.317219s notice: Shutting down client connections...
+2020-10-26T14:14:43.110159366 32.317415s notice: All client connections closed.
+2020-10-26T14:14:43.110169398 32.317425s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2020-10-26T14:14:43.128600888 32.335857s notice: Storage engine shut down.

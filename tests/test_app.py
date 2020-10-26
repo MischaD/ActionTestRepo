@@ -1,5 +1,6 @@
 
 class TestApp:
     def test_apis(self):
-        import rethinkdb
+        from app.database import RDB
+        RDB()
         assert True
