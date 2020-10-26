@@ -8,17 +8,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7
-      uses: actions/setup.python@v2
+      uses: actions/setup-python@v2
       with:
         python-version: 3.7
-    - name: Install poetry
+    - name: Install Poetry
       run: |
-          curl -fsS -o get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
-          python get-poetry.py -y
-          echo "::set-env name=PATH::$HOME/.poetry/bin:$PATH"
+        curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python - -y
+
+    - name: Add poetry to path
+      run: |
+        echo "::set-env name=PATH::$HOME/.poetry/bin:$PATH"
+
     - name: Install Dependencies
       run: |
-          poetry install
+        poetry install
+
     - name: Run Test
       run: |
         poetry run pytest
